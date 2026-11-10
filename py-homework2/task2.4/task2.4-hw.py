@@ -39,10 +39,10 @@ def main():
 
         command, *args = parse_input(user_input)
 
-        if command in ["закрити", "вихід"]:
+        if command in ["close","exit","закрити", "вихід"]:
             print("Гарного дня!")
             break
-        elif command == "привіт":
+        elif command == ["hello","привіт"]:
             print("Як можу допомогти?")
         elif command == "add":
             print(add_contact(args, contacts))
